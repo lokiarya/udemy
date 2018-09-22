@@ -11,8 +11,8 @@ public class SelectionSort {
 		for (int i = input.length - 1; i > 0; i--) {
 			int selected = 0;
 			for (int j = 1; j <= i; j++) {
-				selected = (input[j] > input[selected]) ? j : selected;
 				loops++;
+				selected = (input[j] > input[selected]) ? j : selected;
 			}
 			Utils.Swap(input, selected, i);
 			Utils.PrintArray(input);
