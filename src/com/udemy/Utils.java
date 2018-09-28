@@ -23,7 +23,7 @@ public class Utils {
 		for (int i = 0; i < array.length; i++) {
 			strOut = strOut + ", " + array[i];
 		}
-		System.out.println((msg.length() > 0 ? msg + "\n" : "") + strOut.substring(2) + "\n");
+		System.out.println((msg.length() > 0 ? msg + "\n" : "") + strOut.substring(2) + (msg.length() > 0 ? "\n" : ""));
 	}
 
 	public static void PrintArray(int[] array) {
